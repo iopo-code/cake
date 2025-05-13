@@ -1,18 +1,14 @@
+
 import { Head } from "$fresh/runtime.ts";
+//import Footer from '../components/Footer.tsx'
 
 export default function Card_version() {
-  // 新增函数
-  const changeVersion = (version: string) => {
-    // 这里实现版本切换逻辑
-    console.log("切换版本:", version);
-    // 例如调用全局函数或更新状态
-  };
 	return (
 		<>
 			<Head>
 				<link href="/card.css" rel="stylesheet"></link>
 				<script src="/js/jquery.min.js"></script>
-				
+				<script src="/card_version.js"></script>
 			</Head>
 
 			<div class="w-full leading-8 min-h-screen text-shadow bg-pink-400 text-lg text-red-100">
@@ -38,7 +34,10 @@ export default function Card_version() {
 							<div onClick="changeVersion('custom')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">自定义(秘)</div>
 						</div>
 					</div>
-				</div>	
+				</div>
+
+
+				
 			</div>
 
 		</>
