@@ -1,4 +1,3 @@
-// deno-lint-ignore-file fresh-server-event-handlers
 import { Head } from "$fresh/runtime.ts";
 
 export default function Card_version() {
@@ -27,16 +26,16 @@ export default function Card_version() {
 					<div class="max-w-md mx-auto p-4">
 						<div class="font-black my-4">选择任务卡组合</div>
 						<div class="">
-							<div onClick={() => changeVersion('lover0')} class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">恋爱版</div>
-							<div onClick={() => changeVersion('lover1')} class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">热恋版</div>
-							<div onClick={() => changeVersion('sex0')}   class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">同居(秘)</div>
-							<div onClick={() => changeVersion('sex1')}   class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">进阶版(秘)</div>
-							<div onClick={() => changeVersion('sex2')}   class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">私密版(秘)</div>
-							<div onClick={() => changeVersion('sm')}     class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">SM版(秘)</div>
-							<div onClick={() => changeVersion('huwai')}  class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">户外版(秘)</div>
-							<div onClick={() => changeVersion('nvpu')} 	 class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">男扑版(秘)</div>
-							<div onClick={() => changeVersion('nanpu')}  class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">女扑版(秘)</div>
-							<div onClick={() => changeVersion('custom')} class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">自定义(秘)</div>
+							<div onClick="changeVersion('lover0')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">恋爱版</div>
+							<div onClick="changeVersion('lover1')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">热恋版</div>
+							<div onClick="changeVersion('sex0')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">同居(秘)</div>
+							<div onClick="changeVersion('sex1')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">进阶版(秘)</div>
+							<div onClick="changeVersion('sex2')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">私密版(秘)</div>
+							<div onClick="changeVersion('sm')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">SM版(秘)</div>
+							<div onClick="changeVersion('huwai')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">户外版(秘)</div>
+							<div onClick="changeVersion('nvpu')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">男扑版(秘)</div>
+							<div onClick="changeVersion('nanpu')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">女扑版(秘)</div>
+							<div onClick="changeVersion('custom')" class="p-2 cursor-pointer bg-pink-600 rounded border mt-4">自定义(秘)</div>
 						</div>
 					</div>
 				</div>	
