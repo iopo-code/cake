@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 
-import Footer from '../components/Footer.tsx'
+
 
 export default function Page() {
   return (
@@ -22,7 +22,7 @@ export default function Page() {
         <div class="my-8">关注小红书，获取最新发布动态。</div>
         <div><a class="underline" href="https://www.xiaohongshu.com/user/profile/64e8ce860000000001013f7a">小红书官方账号</a></div>
       </div>
-      <Footer></Footer>
+      
     </div>
   );
 }

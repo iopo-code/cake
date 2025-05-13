@@ -1,6 +1,6 @@
-import { useSignal } from "@preact/signals";
+//import { useSignal } from "@preact/signals";
 
-import Footer from '../components/Footer.tsx'
+//
 
 export default function Home() {
   return (
@@ -24,7 +24,6 @@ export default function Home() {
         </div>
         <div class="my-8">支持android，ios，平板，电脑等设备访问</div>
       </div>
-      <Footer></Footer>
     </div>
   );
 }
