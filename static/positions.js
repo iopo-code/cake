@@ -1,3 +1,4 @@
+// deno-lint-ignore prefer-const
 let positions = [
     "L3Bvc2l0aW9ucy9HLVNwb3QtU25pcGVyLVNleC1Qb3NpdGlvbi1JbGx1c3RyYXRpb24uanBn",
     "L3Bvc2l0aW9ucy9Eb2dneS1TdHlsZS1TZXgtUG9zaXRpb24tSWxsdXN0cmF0aW9uLmpwZw==",
@@ -102,13 +103,11 @@ let positions = [
 ];
 
 $(function () {
-    let vip = localStorage.getItem("vip");
-    let length = 10;
-    if (vip) {
+
         length = 100;
         $("#position-count").text(100);
         $("#goabout").hide();
-    }
+        
     $("#card").on("change", () => {
         $("#position").attr("src", "");
         if (!$("#card")[0].checked) {
@@ -117,9 +116,10 @@ $(function () {
                 format: ["mp3"],
                 autoplay: true,
                 onload: function () {
-                    window.voice = null;
+                    globalThis.voice = null;
                 },
             });
+            // deno-lint-ignore prefer-const
             let src = atob(positions[Math.floor(length * Math.random())]);
             setTimeout(function () {
                 $("#position").attr("src", src);

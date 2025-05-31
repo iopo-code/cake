@@ -33,10 +33,7 @@ export default function Card() {
               </div>
             </label>
           </div>
-          <div class="text-center">抽一个试试（共<span id="position-count">10</span>个姿势）</div>
-          <div class="text-center mt-2" id="goabout">
-            <a href="/about" class="border bg-pink-600 px-4 py-2 rounded text-center" >解锁100个姿势</a>
-          </div>
+          <div class="text-center">抽一个看看今天用什么姿势叭~嘿嘿嘿</div>
         </div>
       </div>
     </>
